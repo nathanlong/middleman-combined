@@ -1,0 +1,21 @@
+// COLORS
+// Color variable recommendation: http://sachagreif.com/sass-color-variables/
+// ----------------------------------------------------------------------------
+
+$blue:      #268bd2;
+$darkblue:  #0a5061;
+$green:     #2a9c79;
+$orange:    #cd4a00;
+$dark-gray: #333;
+$med-gray:  #666;
+$off-white: #f7f9fb;
+
+$link-color: $blue;
+$text-color: $dark-gray;
+
+
+// MEDIA QUERY BREAKPOINTS
+// ----------------------------------------------------------------------------
+
+$break-small: 500px;
+$break-large: 1200px;

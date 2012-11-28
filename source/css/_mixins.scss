@@ -1,0 +1,15 @@
+// MEDIA QUERY MIXINS
+// Allows grouping multiple breakpoint rules under the same selectors
+// Medium screen will always span between the large and small breakpoints
+// ----------------------------------------------------------------------------
+
+@mixin large-screen {
+    @media (min-width: $break-large) { @content; }
+}
+@mixin medium-screen {
+    @media (min-width: $break-small) and (max-width: $break-large) { @content; }
+}
+@mixin small-screen {
+    @media (max-width: $break-small)  { @content; }
+}
+
