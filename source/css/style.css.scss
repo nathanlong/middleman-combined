@@ -1,8 +1,5 @@
 @import 'compass';
-
-@import 'variables';
-@import 'mixins';
-
+@import 'base';
 @import 'normalize';
 
 /* =============================================================================
@@ -10,18 +7,7 @@
    ========================================================================== */
 
 body {
-  background: $darkblue;
-  text-align: center;
   color: $text-color;
-  @include small-screen {
-    background: #c5c5c5;
-  }
-  @include medium-screen {
-    background: #e5e5e5;
-  }
-  @include large-screen {
-    background: #f5f5f5;
-  }
 }
 
 a {
