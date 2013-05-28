@@ -1,13 +1,12 @@
 # Combined
 
-A bare-bones template for [Middleman](http://middlemanapp.com/) that combines
-the smart defaults of [H5BP](https://github.com/h5bp/html5-boilerplate),
-[normalize.css](https://github.com/necolas/normalize.css) and includes
-mobile-first, inline media queries with IE support.
+A bare-bones template for [Middleman](http://middlemanapp.com/) that combines:
+
+- The smart defaults of [H5BP](https://github.com/h5bp/html5-boilerplate)
+- [normalize.css](https://github.com/necolas/normalize.css)
+- Mobile-first, inline media queries with [IE support](http://jakearchibald.github.io/sass-ie/).
 
 Built for rapid responsive prototyping.
-
-Read up on the [media query implementation](http://jakearchibald.github.io/sass-ie/)
 
 ## To install:
 
