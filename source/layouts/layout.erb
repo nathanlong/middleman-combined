@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js oldie"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 <head>
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <title><%= data.page.title %></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <%= stylesheet_link_tag "style" %>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/old-ie.css"><![endif]-->
+  <!--[if gt IE 8]><!--><link rel="stylesheet" href="css/all.css"><!--<![endif]-->
   <%= javascript_include_tag  "/vendor/modernizr-2.6.2.min.js" %>
 </head>
   

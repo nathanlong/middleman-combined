@@ -8,8 +8,24 @@
 
 body {
   color: $text-color;
+
+  @include respond-min(50em) {
+    padding: 2em;
+  }
+
+  @include respond-min(75em) {
+    padding: 5em;
+  }
+
 }
 
 a {
   color: $link-color;
+
+  @include old-ie {
+    // These hacks won't appear in the normal stylesheet
+    display: inline;
+    zoom: 1;
+    whatever-ie-needs: le-sigh;
+  }
 }

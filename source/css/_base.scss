@@ -13,25 +13,33 @@ $off-white: #f7f9fb;
 $link-color: $blue;
 $text-color: $dark-gray;
 
-// MEDIA QUERY BREAKPOINTS
+// Media Queries with IE support: http://jakearchibald.github.io/sass-ie/
 // ----------------------------------------------------------------------------
 
-$break-small: 500px;
-$break-large: 1200px;
+// Allows fixed media query export (for IE sheet)
+// Make sure you change in IE sheet
+$fix-mqs: false !default;
 
-// MEDIA QUERY MIXINS
-// Allows grouping multiple breakpoint rules under the same selectors
-// Medium screen will always span between the large and small breakpoints
-// ----------------------------------------------------------------------------
-
-@mixin large-screen {
-    @media (min-width: $break-large) { @content; }
+// Check for export, otherwise build a media query
+@mixin respond-min($width) {
+  @if $fix-mqs {
+    @if $fix-mqs >= $width {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
 }
-@mixin medium-screen {
-    @media (min-width: $break-small) and (max-width: $break-large) { @content; }
-}
-@mixin small-screen {
-    @media (max-width: $break-small)  { @content; }
-}
 
+// Prevent IE styles from exporting, unless asked for
+$old-ie: false !default;
 
+// Everything for IE8-
+@mixin old-ie {
+  @if $old-ie {
+    @content;
+  }
+}
