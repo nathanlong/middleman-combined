@@ -9,6 +9,9 @@
 # Combine media queries at bottom of document
 require 'sass-media_query_combiner'
 
+# Turns on auto-prefixer
+activate :autoprefixer
+
 # Change Compass configuration
 compass_config do |config|
   config.output_style = :expanded
