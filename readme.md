@@ -6,7 +6,7 @@ A bare-bones template for [Middleman](http://middlemanapp.com/) that combines:
 - [normalize.css](https://github.com/necolas/normalize.css)
 - Mobile-first, inline media queries with [IE support](http://jakearchibald.github.io/sass-ie/)
 - [Easy deployment](https://github.com/indirect/middleman-heroku-static-app) as a static app to Heroku for review and testing
-- Super-fast prefix-free CSS support from [Autoprefixer](https://github.com/ai/autoprefixer)
+
 
 Built for rapid responsive prototyping.
 
