@@ -7,16 +7,19 @@
    ========================================================================== */
 
 body {
+  // Global styles + mobile
   color: $text-color;
+  background-color: $page-bg;
 
-  @include respond-min(50em) {
+  // Example media query at 45em / 720px / tablet range
+  @include respond-min(45em) {
     padding: 2em;
   }
 
+  // Example media query at 60em / 960px / desktop range
   @include respond-min(75em) {
     padding: 5em;
   }
-
 }
 
 a {
@@ -28,4 +31,5 @@ a {
     zoom: 1;
     whatever-ie-needs: le-sigh;
   }
+
 }

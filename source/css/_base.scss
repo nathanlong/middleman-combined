@@ -1,17 +1,63 @@
 // COLORS
 // Color variable recommendation: http://sachagreif.com/sass-color-variables/
+// Better color defaults: http://clrs.cc/
 // ----------------------------------------------------------------------------
 
-$blue:      #268bd2;
-$darkblue:  #0a5061;
-$green:     #2a9c79;
-$orange:    #cd4a00;
-$dark-gray: #333;
-$med-gray:  #666;
+// Cool
+
+$aqua: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$teal: #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime: #01ff70;
+
+// Warm
+
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b;
+
+// Gray Scale
+
+$white: #fff;
+$silver: #ddd;
+$gray: #aaa;
+$black: #111;
+
+// Extra colors
+
 $off-white: #f7f9fb;
 
+// Color Assignments
+
+$page-bg: $off-white;
 $link-color: $blue;
-$text-color: $dark-gray;
+$text-color: $black;
+
+// Quick Classes
+
+.navy { color: $navy; }
+.blue { color: $blue; }
+.aqua { color: $aqua; }
+.teal { color: $teal; }
+.olive { color: $olive; }
+.green { color: $green; }
+.lime { color: $lime; }
+.yellow { color: $yellow; }
+.orange { color: $orange; }
+.red { color: $red; }
+.fuchsia { color: $fuchsia; }
+.purple { color: $purple; }
+.maroon { color: $maroon; }
+.white { color: $white; }
+.silver { color: $silver; }
+.gray { color: $gray; }
+.black { color: $black; }
 
 // Media Queries with IE support: http://jakearchibald.github.io/sass-ie/
 // ----------------------------------------------------------------------------
